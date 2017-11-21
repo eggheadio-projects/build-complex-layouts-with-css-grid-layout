@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [left-sidebar-start] 1fr
+    [left-sidebar-end main-content-start] 2fr
+    [main-content-end right-sidebar-start] 1fr
+    [right-sidebar-end];
+  
+  grid-template-rows:
+    [body-start] 6fr
+    [body-end footer-start] 2fr
+    [footer-end];
+    
+  height: 100vh;
+  grid-gap: 15px;
+}
+
+.container > * {
+  background-color: palegoldenrod;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  grid-column: main-content-start / right-sidebar-end;
+}
+
+.left-sidebar {
+  grid-row: body-start / footer-end;
+}

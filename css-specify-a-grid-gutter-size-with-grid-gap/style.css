@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-gap: 10px 100px;
+  margin: 10px;
+}
+
+.grid-item {
+  background-color: lightgreen;
+  font-size: 40px;
+}

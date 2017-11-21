@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  font-size: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+}
+
+.grid--level-1 {
+  height: 100vh;
+}
+
+.grid--level-2 {
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.grid--level-1 > .grid-item {
+  background-color: dodgerblue;
+}
+
+.grid--level-2 > .grid-item {
+  background-color: mediumspringgreen;
+}

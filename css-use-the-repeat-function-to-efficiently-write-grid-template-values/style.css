@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  height: 100vh;
+  grid-template-columns:
+    [start]
+    repeat(3,
+      [col-sml-start] minmax(20px, auto)
+      [col-sml-end col-med-start] minmax(40px, auto)
+      [col-med-end col-sml-start] minmax(20px, auto)
+      [col-sml-end col-lrg-start] minmax(80px, auto)
+      [col-lrg-end]
+    ) [end]
+}
+
+.box {
+  background-color: orangered;
+  font-size: 20px;
+}
